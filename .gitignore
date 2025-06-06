@@ -1,0 +1,65 @@
+# =====================
+# OS-Specific Ignores
+# =====================
+# Stores thumbnail cache info for images in a folder. Automatically created and irrelevant to source control.
+Thumbs.db
+
+# =====================
+# Editor/IDE Ignores
+# =====================
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+
+# =====================
+# Blazor / .NET
+# =====================
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+*.cache
+*.log
+*.vs/
+wwwroot/_framework/
+wwwroot/*.gz
+wwwroot/*.br
+
+# ASP.NET publish artifacts
+.publish/
+dist/
+build/
+
+# Razor Component Cache
+**/Generated/
+**/ComponentModelCache/
+
+# =====================
+# Frontend Build Tools
+# =====================
+*.map
+dist/
+build/
+.eslintrc.cache
+.cache/
+.tmp/
+*.tsbuildinfo
+
+# =====================
+# Environment / Config Files
+# =====================
+.env
+.env.*.local
+
+# =====================
+# Optional: Lock Files (if not committing them)
+# =====================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

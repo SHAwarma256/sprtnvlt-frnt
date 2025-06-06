@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+   <head>
+      <meta charset="UTF-8">
+      <title>Zicos look up</title>
+      <link rel="icon" href="img/favicon.png" /><!-- It’s better to name the favicon "favicon" -->
+      <link rel="stylesheet" href="css/site.css">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul role="menubar">
+               <li role="menuitem"><a href="index.html">Recherche / Index </a></li>
+               <li role="menuitem"><a href="classified.html">Annonces</a></li>
+               <li role="menuitem"><a href="about.html">À propos</a></li>
+               <li role="menuitem"><a href="login.html">Login/Sign up form page</a></li>
+            </ul>
+         </nav>
+         <h1>Log/Sign in form … </h1>
+      </header>
+      <main>
+         <nav>
+            <h3>Find musicians and bands</h3>
+            <!-- The action is the page handling the post or get, or in a client server context is the endpoint url that will handle the query -->
+            <form action="" method="post"> 
+
+               <!-- for in the label tag, refers to the id attribute of the input tag -->
+               <label for="musicianid">Musician</label><br>
+               <!-- name attribute in the input tag is the parameter name that will be used in the get or post action -->
+               <input type="checkbox" id="musicianid" name="musician"  checked>
+
+               <label for="firstname">Prénom</label><br>
+               <input id="firstname" name="firstname" type="text" required><br>
+
+               <label for="lastname">Nom de famille</label><br>
+               <input id="lastname" name="lastname" type="text" required><br>
+
+               <label for="email">e-mail</label><br>
+               <input type="email" id="email" name="email" required><br>
+               
+               <!-- Favor buttons instead of input … Because they are what they do and conversely.
+                 And better for screen readers and it really is structure of a page and  it gives mor css options -->
+               <button type="submit">Ok</button>
+               <!-- <input type="submit" value="Ok with input instead of button">  -->
+
+            </form>
+
+            <!-- <form action="" method="post"> 
+               <label>
+                  Musician
+                  <input type="checkbox" id="musicianid" name="musician"  checked>
+               </label>
+               <label>
+                  Prénom
+                  <input id="firstname" name="firstname" type="text" required>
+               </label>
+               <label>
+                  Nom de famille
+                  <input id="lastname" name="lastname" type="text" required><br>
+               </label>
+               <label>
+                  e-mail
+                  <input type="email" id="email" name="email" required><br>
+               </label>
+               <button type="submit">Ok</button>
+            </form> -->
+            <form action="" method="post"> 
+               <div>
+                  <input type="checkbox" id="musicianid" name="musician" value="musician"  checked>
+                  <label for="musicianid">Musician</label>
+
+                  <input type="checkbox" id="bandid" name="band" value="band">
+                  <label for="musicianid">Band</label>
+               </div>
+               <div>
+               <div>
+                  <label for="firstname">Prénom</label>
+                  <input id="firstname" name="firstname" type="text" required>
+               </div>
+               <div>
+
+                  <label for="lastname">Nom de famille</label>
+                  <input id="lastname" name="lastname" type="text" required>
+               </div>
+               <div>
+                  <label for="email">e-mail</label>
+                  <input type="email" id="email" name="email" required>
+               </div>
+               <div>
+                  <label for="password">Password</label>
+                  <input type="password" id="parssword" name="password" required>
+               </div>
+               <h3>How hot do you feel ?</h3>
+               <div>
+                  <input type="radio" id="hotradio" name="howhot" value="hot" required>
+                  <label for="hotradio">Hot</label>
+
+                  <input type="radio" id="coldradio" name="howhot" value="cold" required>
+                  <label for="coldradio">Cold</label>
+
+                  <input type="radio" id="tepidradio" name="howhot" value="tepid" required>
+                  <label for="tepidradio">Tepid</label>
+               </div>
+
+               <button type="submit">Ok</button>
+            </form>
+ 
+            <div>Musiciens</div>
+            <div>Groupes</div>
+         </nav>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque alias, provident numquam eum vitae
+             odit magnam quasi enim debitis tenetur dolor ratione, corrupti inventore necessitatibus consequuntur sit recusandae
+             repudiandae libero, quam veritatis doloribus dignissimos. Eos nisi labore ut veniam architecto incidunt omnis sunt aut.
+         </p>
+      </main>
+      <footer>
+         <small>&copy;&nbsp;Zicdope 2025. All rights reserved.</small>
+         <time datetime="2025-03-15T14:06:12+02:00"></time>
+      </footer>
+   </body>
+</html>
