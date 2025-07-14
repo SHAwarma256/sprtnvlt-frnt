@@ -1,65 +1,42 @@
-# =====================
-# OS-Specific Ignores
-# =====================
-# Stores thumbnail cache info for images in a folder. Automatically created and irrelevant to source control.
-Thumbs.db
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
-# =====================
-# Editor/IDE Ignores
-# =====================
-.vscode/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
 
-# Rider / JetBrains
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
 .idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# =====================
-# Blazor / .NET
-# =====================
-bin/
-obj/
-*.dll
-*.pdb
-*.exe
-*.cache
-*.log
-*.vs/
-wwwroot/_framework/
-wwwroot/*.gz
-wwwroot/*.br
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
 
-# ASP.NET publish artifacts
-.publish/
-dist/
-build/
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
 
-# Razor Component Cache
-**/Generated/
-**/ComponentModelCache/
-
-# =====================
-# Frontend Build Tools
-# =====================
-*.map
-dist/
-build/
-.eslintrc.cache
-.cache/
-.tmp/
-*.tsbuildinfo
-
-# =====================
-# Environment / Config Files
-# =====================
-.env
-.env.*.local
-
-# =====================
-# Optional: Lock Files (if not committing them)
-# =====================
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
+# System files
+.DS_Store
+Thumbs.db
