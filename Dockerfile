@@ -12,6 +12,9 @@ FROM nginx:alpine
 # Docker creates a working directory inside the alpine container file system, any subsequent commands (COPY, RUN, etc.) will use /app as the current working directory.
 # WORKDIR /app
 
+# Remove default nginx web files
+RUN rm -rf /usr/share/nginx/html/*
+
 #COPY . .
 COPY /src/ /usr/share/nginx/html
 #COPY ./ /usr/local/apache2/htdocs/
